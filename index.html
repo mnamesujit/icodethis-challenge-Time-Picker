@@ -1,14 +1,37 @@
+<!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <title>Time Picker</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-indigo-900 flex justify-center items-center min-h-screen">
-
+<body class="bg-color flex justify-center items-center h-screen">
+    <main class="container w-11/12 h-5/6 lg:h-3/4 lg:w-3/4 rounded-md">
+        <section class="content h-full flex text-white p-6">
+            <div class="left flex-initial w-3/5 border-r-2 border-slate-900	p-2 relative">
+                <h2 class="capitalize text-2xl">absolute time</h2>
+                <form action="" class="flex-row mt-4">
+                    <div class=" flex flex-col py-4 gap-y-3">
+                        <label for="from">From</label>
+                        <input type="text" name="from" id="from" class="w-3/4 h-10 bg-transparent border-2 border-slate-800 rounded-md">
+                    </div>
+                    <div class="flex flex-col gap-y-3">
+                        <label for="to">To</label>
+                        <input type="text" name="to" id="to" class="w-3/4 h-10 bg-transparent border-2 border-slate-800 rounded-md">
+                    </div>
+                    <button class="bg-blue-600 py-4 px-10 rounded-full mt-8">Apply Time Range</button>
+                </form>
+                <p class="absolute bottom-12 left-20 text-slate-500">Want to find out more? <a href="#" class="text-slate-400 border-b border-slate-600">Read the documentation</a></p>
+            </div>
+            <div class="right flex-initial w-2/5">
+             Side Side
+            </div>
+        </section>
+        </section>
+    </main>
 </body>
 
 </html>
